@@ -191,7 +191,7 @@ Puppet::Functions.create_function(:hiera_aws_sm) do
           context.cache(k, val)
         end
         if !context.cache_has_key('cache_loaded')
-          context.cache('cache_loaded', true)
+          context.cache('cache_loaded', 'true')
         end
       end
 
